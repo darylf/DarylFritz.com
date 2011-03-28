@@ -1,7 +1,33 @@
 !!!
 %html
   %head
-    %title StaticMatic
-    = stylesheets
+    %meta{:charset => "utf-8"}
+    %title Daryl Fritz &#8729; I'm Internet Famous!
+    %link{:rel => 'stylesheet', :href => 'stylesheets/main.css', :media => 'all'}
+    %link{:rel => "openid2.provider", :href => "https://www.google.com/accounts/o8/ud?source=profiles"}
+    %link{:rel => "openid2.local_id", :href => "http://www.google.com/profiles/103291878983108857970"}
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}
   %body
-    = yield
+    %div#page
+
+      %header
+        %h1 Daryl Fritz
+        %ul
+          %li.first
+            = link "Last.fm", "http://www.last.fm/user/MadCowDzz"
+          %li
+            = link "Photos", "http://www.flickr.com/photos/darylfritz"
+          %li
+            = link "Bookmarks", "http://delicious.com/MadCowDzz"
+          %li
+            = link "Twitter", "http://twitter.com/DarylFritz"
+
+      %footer
+        %p
+          This page is licensed under a 
+          = link "Creative Commons Attribution 3.0 Unported License", "http://creativecommons.org/licenses/by/3.0/" 
+          \.
+        
+      / Google Analytics stuff 
+      / %script{:src => "/scripts/taglinks.min.js"}
+      / = google_analytics :acct => "UA-371632-3"
