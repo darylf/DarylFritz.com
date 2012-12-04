@@ -4,6 +4,10 @@ task :build do
   sh "jekyll"
 end
 
+task :server do
+  sh "jekyll --server"
+end
+
 task :css do
   require "sass"
   contents = IO.read("css/main.css.scss").gsub(/^\-{3}\n.*?\-{3}/, "")
