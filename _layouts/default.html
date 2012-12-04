@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }} &#8729; {{ site.phrase }}</title>
+    {% include openid.html %}
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen,projection">
+    <link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        {{ content }}
+      </header>
+      <footer style="display:none;">
+          This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+      </footer>
+    </div>
+    
+    {% include google_analytics.html %}
+  </body>
+</html>

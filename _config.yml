@@ -1,0 +1,20 @@
+## Metadata
+title: Daryl Fritz
+phrase: I'm Internet Famous!
+keywords: Daryl Fritz, daryl, fritz, programmer, toronto, canada, travel, photography, beer
+description: A Canadian web developer who enjoys travel, beer, and technology.
+
+## Site Configuration
+analytics: UA-371632-3
+
+## Jekyll Configuration
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+
+exclude:
+- README.md
+- LICENSE
+- Rakefile
+- Gemfile
+- Gemfile.lock

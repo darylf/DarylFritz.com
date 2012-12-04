@@ -1,0 +1,78 @@
+---
+Style: main
+---
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Title    : DarylFritz.com CSS
+Author   : Daryl Fritz
+URL      : http://darylfritz.com
+
+Updated  : December 3, 2012
+
+- - - - - - - - - - - - - - - - - - - - -  */
+body, #page, header h1, ul, ul li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff url(../images/spacecow_08.jpg) no-repeat fixed -125px -100px;
+  color: #000;
+  font: {
+    size: 80% ;
+    family: Verdana, Geneva, sans-serif;
+  }
+}
+
+#page {
+  bottom: 0;
+  margin: {
+    bottom: 10px;
+  }
+  position: absolute;
+  width: 100%;
+}
+
+#page, h1, ul {
+  text-align: right;
+}
+
+ul li.first {
+  border: 0;
+}
+
+h1 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 700;
+  letter-spacing: 0.8em;
+  padding-right: 1em;
+}
+  
+ul {
+  padding-right: 1.2em;
+}
+
+ul li {
+  border-left: 1px solid #999;
+  color: #666;
+  display: inline;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  list-style: none;
+  padding: 0 .5em;
+  text-transform: lowercase;
+}
+
+a {
+  color: #999
+}
+
+footer {
+  color: #535353;
+  font-size: 80%;
+  margin-top: 20px;
+}
+
+footer a {
+  font-color: #535353;
+}
