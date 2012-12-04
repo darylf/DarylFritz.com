@@ -12,7 +12,7 @@ This is a repository to track changes to the layout and content for <http://dary
 
 Version
 -------
-2.0.1 - stable and versioned using [semantic versioning](http://semver.org/).
+0.2.0 - stable and versioned using [semantic versioning](http://semver.org/).
 
 Prerequisites
 -------------
