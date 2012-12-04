@@ -42,7 +42,7 @@ Usage
 
 Deploy
 ------
-Copy all files generated from __site_ to the public web folder on the host.
+Copy all files generated from `_site` to the public web folder on the host.
 
 
 Contributing
@@ -56,4 +56,4 @@ Although this source code is for hosting of my personal website, I encourage any
 
 License
 -------
-This work, both the actual website and this code repository, is licensed under a [Creative Commons 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) license.
+This work, both the actual website and this code repository, is licensed under a [Creative Commons 3.0 BY-NC-SA](http://creativecommons.org/licenses/by-nc-sa/3.0/) license.
