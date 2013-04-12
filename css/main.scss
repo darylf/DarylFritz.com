@@ -37,10 +37,6 @@ body {
   text-align: right;
 }
 
-ul li.first {
-  border: 0;
-}
-
 h1 {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-weight: 700;
@@ -50,17 +46,19 @@ h1 {
   
 ul {
   padding-right: 1.2em;
-}
-
-ul li {
-  border-left: 1px solid #999;
-  color: #666;
-  display: inline;
-  font-size: 1em;
-  letter-spacing: 0.2em;
-  list-style: none;
-  padding: 0 .5em;
-  text-transform: lowercase;
+  li {
+    border-left: 1px solid #999;
+    color: #666;
+    display: inline;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    list-style: none;
+    padding: 0 .5em;
+    text-transform: lowercase;
+  }
+  li.first {
+    border: 0;
+  }
 }
 
 a {
@@ -71,8 +69,7 @@ footer {
   color: #535353;
   font-size: 80%;
   margin-top: 20px;
-}
-
-footer a {
-  font-color: #535353;
+  a {
+    font-color: #535353;
+  }
 }
