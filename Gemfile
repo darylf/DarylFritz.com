@@ -1,5 +1,7 @@
 # A sample Gemfile
 source 'https://rubygems.org'
 
-gem 'jekyll', '0.11.2'
-gem 'sass', '3.2.1'
+gem 'jekyll', '1.3.1'
+
+gem 'jekyll-sass'
+
