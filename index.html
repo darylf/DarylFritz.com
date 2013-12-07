@@ -1,24 +1,35 @@
 ---
 layout: default
+title: Home
 ---
+<aside role='complementary' class='about-me'>
+  <h2>About Me</h2>
+  <p itemprop='description'>
+    <strong>I am <span itemprop='homeLocation workLocation'>Toronto</span> based web developer who enjoys travel, beer, and technology.</strong>
+    I specialize in ASP.NET, W3C compliant HTML5/CSS3 & JavaScript/jQuery programming. I also have part time experience in Ruby on Rails and iOS development.
+  </p>
+  <p>I can be found on these social networks:</p>
+  <ul>
+    <li><a rel='me' href='https://ca.linkedin.com/in/darylfritz' title="LinkedIn: A professional network of the connections I've made throughout my career.">LinkedIn</a></li>
+    <li><a rel='me' href='https://twitter.com/DarylFritz' title="Twitter: My ongoing thoughts about programming, music, and life in general.">Twitter</a></li>
+    <li><a rel='me' href='https://google.com/+DarylFritz' title="Google+: My collection of links and stories, generally related to music and technology.">Google+</a></li>
+    <li><a rel='me' href='https://github.com/DarylF' title="GitHub: A place for me to post code and collaborate on various development projects.">GitHub</a></li>
+    <li><a rel='me' href='https://www.flickr.com/photos/darylfritz' title="Flickr: A repository of the photography I've taken all over the world.">Flickr</a></li>
+    <li><a rel='me' href='https://www.last.fm/user/MadCowDzz' title="Last.fm: A history of my musical tastes.">Last.fm</a></li>
+  </ul>
+</aside>
 
-    <header>
-      <h1>Daryl Fritz</h1>
-      <h2>A Toronto based web developer who enjoys travel, beer, and technology.</h2>
-    </header>
+<hr>
 
-    <article>
-      <p>As seen on these social networks:</p>
-      <ul>
-        <li><a rel="me" href="https://ca.linkedin.com/in/darylfritz" title="LinkedIn: A professional network of the connections I've made throughout my career.">LinkedIn</a></li>
-        <li><a rel="me" href="https://twitter.com/DarylFritz" title="Twitter: My ongoing thoughts about programming, music, and life in general.">Twitter</a></li>
-        <li><a rel="me" href="https://google.com/+DarylFritz" title="Google+: My collection of links and stories, generally related to music and technology.">Google+</a></li>
-        <li><a rel="me" href="https://github.com/DarylF" title="GitHub: A place for me to post code and collaborate on various development projects.">GitHub</a></li>
-        <li><a rel="me" href="https://www.flickr.com/photos/darylfritz" title="Flickr: A repository of the photography I've taken all over the world.">Flickr</a></li>
-        <li><a rel="me" href="https://www.last.fm/user/MadCowDzz" title="Last.fm: A history of my musical tastes.">Last.fm</a></li>
-      </ul>
-    </article>
+<main role='main'>
+  <h2 class='section-title'>Recent Posts</h2>
 
-    <footer>
-      This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
-    </footer>
+  <ul id="recent">
+    {% for post in site.posts limit: 5  %}
+    <li><a href='{{post.url}}'>{{ post.title }}</a> <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></li>
+    {% endfor %}
+  </ul>
+
+</main>
+
+<hr>

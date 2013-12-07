@@ -1,18 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{{ site.title }} &#8729; {{ site.phrase }}</title>
-    {% include openid.html %}
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Chivo|Roboto' rel='stylesheet' type='text/css'>
-    <link href='/css/style.css' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <div id="page">
-      {{ content }}
-    </div>
-    {% include google_analytics.html %}
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>{{ site.title }}{% if page.title %} &#8729; {{ page.title }}{% endif %}</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway|Roboto' rel='stylesheet'>
+  <link rel='stylesheet' href='/css/styles.css'>
+  <link rel="shortcut icon" href="/favicon.ico">
+  {% include openid.html %}
+</head>
+
+<body itemscope itemtype='http://schema.org/Person'>
+<div id='page'>
+  <header class='site-banner'>
+    <h1 itemprop='name' class='title'><a rel='me' href='/' itemprop='url'>Daryl Fritz</a></h1>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <p>The content of this page and its markup is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0'>Creative Commons Attribution 4.0 International License</a>.
+    <small>Please give appropriate credit to my full name, <em>Daryl Fritz</em>, and a link to my homepage, <a href='http://darylfritz.com'>http://darylfritz.com</a>.
+    You must explicitly state if you have made any changes to the content or the tone of the content.</small>
+  </footer>
+</div>
+</body>
 </html>
