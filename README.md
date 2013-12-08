@@ -37,14 +37,13 @@ Configuration
 
 Usage
 -----
-1. See available commands, `rake -P`
-2. Launch local server, `rake server`
-3. Browse the site at `http://localhost:4000/`
+1. Launch local server, `jekyll serve -w`
+2. Browse the site at `http://localhost:4000/`
 
 
 Deploy
 ------
-Run `rake build` and copy all files generated from `_site` to the public web folder on the host.
+Run `jekyll build` and copy all files generated from `_site` to the public web folder on the host.
 
 
 Contributing
