@@ -1,6 +1,12 @@
 ---
 Style: main
 ---
+
+$bp-small : 24em;
+$bp-med : 46.8em;
+$bp-large : 50em;
+$bp-xl : 73em;
+
 * { margin: 0; padding: 0; }
 
 html {
@@ -124,9 +130,12 @@ article.roundup {
   }
 }
 
-// @media only screen and (max-device-width: 768px) {
-// html { font-size: 375%; } /*body=12px and h1=30px*/
-// }
+@media only screen and (min-width: $bp-med) {
+  #page>header,#page aside,#page main, #page article {
+    padding:0 12rem;
+  }
+
+}
 
 // @media only screen and (max-device-width: 480px) {
 // html { font-size: 62.5%; } /*body=10px and h1=25px*/
