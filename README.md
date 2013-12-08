@@ -57,4 +57,4 @@ Although this source code is for hosting of my personal website, I encourage any
 
 License
 -------
-This work, both the actual website and this code repository, is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0) license.
+This work, both the actual website and this code repository, is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
