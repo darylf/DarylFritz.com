@@ -37,7 +37,7 @@ Configuration
 
 Usage
 -----
-1. Launch local server, `jekyll serve -w`
+1. Launch local server, `jekyll serve --watch`
 2. Browse the site at `http://localhost:4000/`
 
 
