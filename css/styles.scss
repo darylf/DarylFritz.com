@@ -7,25 +7,34 @@ $bp-med : 46.8em;
 $bp-large : 50em;
 $bp-xl : 73em;
 
+
 * { margin: 0; padding: 0; }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 body {
   font-size: 1rem;
   line-height: 1.6875;
+  background-image: url(/images/bg_sand.png);
 }
 
-#page>header,#page aside,#page main, #page article {
-  padding:0 1.2rem;
+#page {
+  background-color: #fff;
+  margin: 2rem 8%;
+  padding: 2rem 8rem;
+  border-radius: 10px;
 }
+
 a {
   text-decoration: none;
   text-outline: none;
 }
 a:hover {
   color: #f00;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
 }
 h1 { font-size: 2.8rem; }
 
@@ -41,8 +50,8 @@ article {
   h1 {
     font-size: 1.8em;
   }
-  li {
-    margin-bottom: 1em;
+  ul, ol {
+    margin-left: 3em;
   }
 }
 p {
@@ -52,15 +61,27 @@ p {
 footer, footer small {
   font-size: 0.6rem;
 }
-footer {
-  margin-top: 3rem;
-  padding: 1rem 0.5rem;
-  border-top: 1px solid #ddd;
+#page>footer {
+  margin: 6rem 3rem 0 3rem;
+  padding: 1rem;
+  border-radius: 10px;
   text-align:justify;
+  background-color:#c0c0c0;
+  color: #333;
+  a {
+    color: #333;
+    font-weight: 600;
+  }
+  a:hover {
+    color: #c00;
+  }
+  p {
+    margin: 0;
+  }
 }
 
 .site-banner {
-  padding: 0.5rem;
+  padding: 0.5rem 10%;
   margin-bottom: 0.2em;
   background-color: #333;
   font:normal 4rem/4.5rem Raleway, sans-serif;
@@ -95,16 +116,39 @@ main {
       padding-top: 0.4rem;
     }
   }
+  .circular {
+    float: left;
+    margin-right: 5em;
+  }
+}
+.circular {
+  width: 200px;
+  height: 200px;
+  background: url(/images/darylfritz.png) no-repeat;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .8);
+  img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
 }
 
-.recent {
-  line-height: 1.3em;
+#recent {
+  line-height: 1.8em;
   time {
     float:right;
+  }
+  a:hover {
+    color: #f00;
   }
 }
 
 article {
+  clear: both;
   h2 {
     border-bottom: 1px solid #ddd;
   }
@@ -115,9 +159,9 @@ article {
   footer {
     margin: 0;
     padding: 0;
-    border: none;
-    font-size: 1rem;
+    font-size:0.8rem;
     text-align: right;
+    background-color: inherit;
   }
 }
 article.roundup {
@@ -130,12 +174,12 @@ article.roundup {
   }
 }
 
-@media only screen and (min-width: $bp-med) {
+/*@media only screen and (min-width: $bp-med) {
   #page>header,#page aside,#page main, #page article {
     padding:0 12rem;
   }
 
-}
+}*/
 
 // @media only screen and (max-device-width: 480px) {
 // html { font-size: 62.5%; } /*body=10px and h1=25px*/
