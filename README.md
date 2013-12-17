@@ -20,7 +20,7 @@ Prerequisites
 -------------
 * [Ruby](http://www.ruby-lang.org/en/) (v1.9.2 or higher)
 * [Bundler](http://gembundler.com) (v1.2.1 or higher)
-* [Jekyll](http://jekyllrb.com) (1.3.1)
+* [Jekyll](http://jekyllrb.com) (1.4.2)
 * [SASS](http://sass-lang.com) (v3.2.12)
 
 Installation
