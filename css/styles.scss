@@ -26,8 +26,9 @@ body {
 #page {background-color: #fff;}
 
 .site-banner {
+  padding: 0.5rem 1.5rem;
   background-color: #333;
-  font:normal 1.5rem/1.7rem Raleway, sans-serif;
+  font:normal 1.5rem/3.8rem Raleway, sans-serif;
   a,a:hover {
     color: #fff;
     text-decoration: none;
@@ -85,13 +86,13 @@ ol, ul {
 
 @media (min-width: 40em) {
   body {
-    background-color: #fff;
+    background: #FCBB95 url('/images/bg_sand.png') repeat;
   }
 
   .about-me {
     .circular {
       float: left;
-      margin-right: 2em;
+      margin-right: 1.5em;
     }
     strong {
       display: inline;
@@ -156,18 +157,9 @@ ol, ul {
 
 @media (min-width: 58em) {
 
-  body {
-    background: #FCBB95 url('/images/bg_sand.png') repeat;
-  }
-
   .site-banner {
     padding: 0.5rem 10%;
-    margin-bottom: 0.2em;
-    background-color: #333;
     font:normal 4rem/4.5rem Raleway, sans-serif;
-    a,a:hover {
-      color: #fff;
-    }
   }
 
   #page {
@@ -233,7 +225,7 @@ ol, ul {
       }
     }
     .circular {
-      margin-right: 5em;
+      margin-right: 3em;
     }
   }
 
