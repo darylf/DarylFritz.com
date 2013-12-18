@@ -1,0 +1,59 @@
+---
+Style: main
+---
+/*
+CSS FILE FOR INTERNET EXPLORER 8 AND BELOW
+THIS DESIGN IS MEANT TO BE LOWER QUALITY THAN
+THE REAL SITE FOUND AT styles.css
+*/
+
+header, nav, article, footer, address {   
+    display: block;   
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+hr {
+	display: none;
+}
+
+h1 a {
+	color: black;
+	text-decoration: none;
+}
+
+.about-me strong {
+	font-weight: 500;
+}
+
+.circular {
+	float: right;
+	margin-left: 5em;
+}
+
+ul#recent {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    line-height: 1.8em;
+	time {
+		float:left;
+		margin-right: 1em;
+	}
+}
+
+footer {
+	clear: both;
+	margin: 3em 0;
+	border-top: 1px solid #c0c0c0;
+	p,  small {
+		font-size: 1em;
+	}
+}
+
+article footer {
+	float: right;
+	border: none;
+}
