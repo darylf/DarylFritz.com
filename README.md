@@ -7,19 +7,19 @@ DarylFritz.com
 
 About
 -----
-This is a repository to track changes to the layout and content for <http://darylfritz.com>. 
-The site is now designed to be responsive to the many devices that may be visiting. 
-The content is a list of websites that I contribute to regularly.
+This is a repository to track changes to the layout and content of my personal website, <http://darylfritz.com>. 
+The site is designed to be responsive, allowing many devices with various screen resolutions to enjoy a similar experience.
+The content of the site is a list of websites that I contribute to regularly, and a mini-blog of my thoughts and observations.
 
 
 Version
 -------
-0.4.0 - stable and versioned using [semantic versioning](http://semver.org/).
+0.5.0 - stable and versioned using [semantic versioning](http://semver.org/).
 
 Prerequisites
 -------------
-* [Ruby](http://www.ruby-lang.org/en/) (v1.9.2 or higher)
-* [Bundler](http://gembundler.com) (v1.2.1 or higher)
+* [Ruby](http://www.ruby-lang.org/en/) (v2.0.0 or higher)
+* [Bundler](http://gembundler.com) (v1.3.5 or higher)
 * [Jekyll](http://jekyllrb.com) (1.4.2)
 * [SASS](http://sass-lang.com) (v3.2.12)
 
@@ -35,8 +35,8 @@ Configuration
 1. Review the parameters in `_config.yml`
 
 
-Usage
------
+Preview
+-------
 1. Launch local server, `jekyll serve --watch`
 2. Browse the site at `http://localhost:4000/`
 
