@@ -5,7 +5,7 @@ title: A Toronto based web developer
 <aside role='complementary' class='about-me'>
   <h2>About Me</h2>
 
-  <div class="circular"><img src="/images/darylfritz.png" title="Daryl Fritz" height="200" width="200" /></div>
+  <div class="circular"><img src="{{ site.picture }}" title="Daryl Fritz" height="200" width="200" /></div>
 
   <p itemprop='description'>
     <strong>I am <span itemprop='homeLocation workLocation'>Toronto</span> based web developer who enjoys travel, beer, and technology.</strong>
@@ -22,8 +22,8 @@ title: A Toronto based web developer
   </ul>
 </aside>
 
+{% if site.posts.size > 0 %}
 <hr>
-{% if site.posts > 0 %}
 <main role='main'>
   <h2 class='section-title'>Recent Posts</h2>
 

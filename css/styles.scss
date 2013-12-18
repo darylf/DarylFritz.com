@@ -7,64 +7,66 @@ $bp-med : 46.8em;
 $bp-large : 50em;
 $bp-xl : 73em;
 
-
 * { margin: 0; padding: 0; }
 
 html {
   font-family: 'Raleway', sans-serif;
 }
+
 body {
   font-size: 1rem;
   line-height: 1.6875;
-  background-image: url(/images/bg_sand.png);
+  background-color: #c0c0c0;
 }
 
-#page {
-  background-color: #fff;
-  margin: 2rem 8%;
-  padding: 2rem 8rem;
-  border-radius: 10px;
+#page, .site-banner {
+  padding: 1rem;
 }
 
-a {
-  text-decoration: none;
-  text-outline: none;
+#page {background-color: #fff;}
+
+.site-banner {
+  background-color: #333;
+  font:normal 1.5rem/1.7rem Raleway, sans-serif;
+  a,a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
-a:hover {
-  color: #f00;
+
+.circular img {
+  display: none;
 }
+
+.about-me {
+  strong {
+    display: block;
+    margin-bottom: 1em;
+  }
+  p:last-child {
+    clear: both;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
 }
-h1 { font-size: 2.8rem; }
 
 hr, aside>h2 {
   display: none;
 }
-aside {
-  strong {
-    font-weight: normal;
-  }
-}
-article {
-  h1 {
-    font-size: 1.8em;
-  }
-  ul, ol {
-    margin-left: 3em;
-  }
-}
+
 p {
   margin-bottom: 1rem;
 }
 
-footer, footer small {
-  font-size: 0.6rem;
+ol, ul {
+  margin: 0 0 1em 2em;
 }
+
 #page>footer {
-  margin: 6rem 3rem 0 3rem;
+  margin: 3rem -1rem -1rem -1rem;
   padding: 1rem;
-  border-radius: 10px;
   text-align:justify;
   background-color:#c0c0c0;
   color: #333;
@@ -75,112 +77,195 @@ footer, footer small {
   a:hover {
     color: #c00;
   }
-  p {
+  p,small {
     margin: 0;
+    font-size: 0.6rem;
   }
 }
 
-.site-banner {
-  padding: 0.5rem 10%;
-  margin-bottom: 0.2em;
-  background-color: #333;
-  font:normal 4rem/4.5rem Raleway, sans-serif;
-  a,a:hover {
-    color: #fff;
+@media (min-width: 40em) {
+  body {
+    background-color: #fff;
   }
-}
 
-ul#recent {
-  list-style-type: none;
-}
-
-main {
-  margin-top: 2rem;
-  li {
-    border-bottom: 1px solid #ddd;
-    clear:both;
-  }
-}
-
-.about-me {
-  ul {
-    list-style-type: none;
-    -moz-column-count: 3;
-    -moz-column-gap: 0;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 10px;
-    column-count: 3;
-    column-gap: 10px;
-    text-align: center;
-    li {
-      padding-top: 0.4rem;
+  .about-me {
+    .circular {
+      float: left;
+      margin-right: 2em;
+    }
+    strong {
+      display: inline;
+    }
+    ul {
+      list-style-type: none;
+      -moz-column-count: 2;
+      -moz-column-gap: 0;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 10px;
+      column-count: 2;
+      column-gap: 10px;
+      text-align: center;
+      li {
+        padding-top: 0.4rem;
+      }
     }
   }
+
   .circular {
-    float: left;
-    margin-right: 5em;
+    width: 200px;
+    height: 200px;
+    background: url({{ site.picture }}) no-repeat;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .8);
+    img {
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
   }
-}
-.circular {
-  width: 200px;
-  height: 200px;
-  background: url(/images/darylfritz.png) no-repeat;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .8);
-  img {
-    opacity: 0;
-    filter: alpha(opacity=0);
+
+  ul#recent {
+    list-style-type: none;
+    line-height: 1.8em;
+    li {
+      padding-bottom: 0.4em;
+    }
+    time {
+      float: left;
+      display: block;
+      padding: 0.3em;
+      margin: 0;
+      line-height: 0.5em;
+      clear: right;
+    }
+    a:hover {
+      color: #f00;
+    }
+  }
+
+  #page>footer {
+    margin: 5rem 1rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
   }
 }
 
-#recent {
-  line-height: 1.8em;
-  time {
-    float:right;
+
+@media (min-width: 58em) {
+
+  body {
+    background: #FCBB95 url('/images/bg_sand.png') repeat;
+  }
+
+  .site-banner {
+    padding: 0.5rem 10%;
+    margin-bottom: 0.2em;
+    background-color: #333;
+    font:normal 4rem/4.5rem Raleway, sans-serif;
+    a,a:hover {
+      color: #fff;
+    }
+  }
+
+  #page {
+    background-color: #fff;
+    margin: 2rem 8%;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    max-width: 56em;
+  }
+
+  a {
+    text-decoration: none;
   }
   a:hover {
     color: #f00;
   }
-}
 
-article {
-  clear: both;
-  h2 {
-    border-bottom: 1px solid #ddd;
+  h1 { 
+    font-size: 2.8rem; 
   }
-  header>p {
-    margin: 0 0 1.5em 0;
-    font-size: 0.6em;
+
+  aside {
+    strong {
+      font-weight: normal;
+    }
   }
-  footer {
-    margin: 0;
-    padding: 0;
-    font-size:0.8rem;
-    text-align: right;
-    background-color: inherit;
+
+  article {
+    h1 {
+      font-size: 1.8em;
+    }
+    ul, ol {
+      margin-left: 3em;
+    }
   }
-}
-article.roundup {
-  ul, ol {
+
+
+  footer, footer small {
+    font-size: 0.6rem;
+  }
+
+
+  main {
+    margin-top: 2rem;
     li {
-      list-style: none;
-      border: none;
-      margin-bottom: 1em;
+      border-bottom: 1px solid #ddd;
+      clear:both;
+    }
+  }
+
+  .about-me {
+    ul {
+      list-style-type: none;
+      -moz-column-count: 3;
+      -moz-column-gap: 0;
+      -webkit-column-count: 3;
+      -webkit-column-gap: 10px;
+      column-count: 3;
+      column-gap: 10px;
+      text-align: center;
+      li {
+        padding-top: 0.4rem;
+      }
+    }
+    .circular {
+      margin-right: 5em;
+    }
+  }
+
+  ul#recent {
+    margin: 0;
+    line-height: 1.3em;
+    time {
+      margin: 0;
+      padding: 0;
+      float: right;
+      display: inline;
+      line-height: inherit;
+      clear: inherit;
+      font-size: 0.8em;
+    }
+  }
+
+  article {
+    clear: both;
+    h2 {
+      border-bottom: 1px solid #ddd;
+    }
+    header>p {
+      margin: 0 0 1.5em 0;
+      font-size: 0.6em;
+    }
+    footer {
+      margin: 0;
+      padding: 0;
+      font-size:0.8rem;
+      text-align: right;
+      background-color: inherit;
     }
   }
 }
-
-/*@media only screen and (min-width: $bp-med) {
-  #page>header,#page aside,#page main, #page article {
-    padding:0 12rem;
-  }
-
-}*/
-
-// @media only screen and (max-device-width: 480px) {
-// html { font-size: 62.5%; } /*body=10px and h1=25px*/
-// }
