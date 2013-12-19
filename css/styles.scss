@@ -17,21 +17,61 @@ body {
   font-size: 1rem;
   line-height: 1.6875;
   background-color: #c0c0c0;
+  text-align:center;
+}
+
+#page, header {
+  text-align: left;
 }
 
 #page, .site-banner {
   padding: 1rem;
 }
 
-#page {background-color: #fff;}
+#page {
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4em;
+}
+
+hr, aside>h2 {
+  display: none;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ol, ul {
+  margin: 0 0 1em 2em;
+}
+
+a:link {
+  color: #00f;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+  color:#f00;
+}
 
 .site-banner {
   padding: 0.5rem 1.5rem;
   background-color: #333;
   font:normal 1.5rem/3.8rem Raleway, sans-serif;
-  a,a:hover {
+  a:link {
     color: #fff;
     text-decoration: none;
+  }
+  a:hover, a:active, a:focus {
+    color: #FFD700;
   }
 }
 
@@ -47,22 +87,17 @@ body {
   p:last-child {
     clear: both;
   }
+
+  strong > a {
+    color: black;
+    :hover {
+      text-decoration: none;
+    }
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
-}
+article>h2 {
 
-hr, aside>h2 {
-  display: none;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-ol, ul {
-  margin: 0 0 1em 2em;
 }
 
 #page>footer {
@@ -75,7 +110,7 @@ ol, ul {
     color: #333;
     font-weight: 600;
   }
-  a:hover {
+  a:hover, a:active, a:focus {
     color: #c00;
   }
   p,small {
@@ -142,9 +177,6 @@ ol, ul {
       line-height: 0.5em;
       clear: right;
     }
-    a:hover {
-      color: #f00;
-    }
   }
 
   #page>footer {
@@ -156,25 +188,33 @@ ol, ul {
 
 
 @media (min-width: 58em) {
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    h1 {
 
+    }
+  }
   .site-banner {
-    padding: 0.5rem 10%;
+    text-align: center;
     font:normal 4rem/4.5rem Raleway, sans-serif;
+    margin: 0 auto;
+    padding: 0 3rem;
+    h1 {
+      margin: 0 auto;
+      max-width: 66rem;
+      text-align: left;
+    }
   }
 
   #page {
-    background-color: #fff;
-    margin: 2rem 8%;
+    margin: 2rem auto;
     padding: 2rem 3rem;
     border-radius: 10px;
-    max-width: 56em;
-  }
-
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    color: #f00;
+    background-color: #fff;
+    max-width: 56rem;
   }
 
   h1 { 
@@ -201,16 +241,8 @@ ol, ul {
     font-size: 0.6rem;
   }
 
-
-  main {
-    margin-top: 2rem;
-    li {
-      border-bottom: 1px solid #ddd;
-      clear:both;
-    }
-  }
-
   .about-me {
+    margin-bottom: 2.5rem;
     ul {
       list-style-type: none;
       -moz-column-count: 3;
@@ -241,12 +273,17 @@ ol, ul {
       clear: inherit;
       font-size: 0.8em;
     }
+    li {
+      padding-top: 0.3em;
+      border-bottom: 1px solid #ddd;
+      clear:both;
+    }
   }
 
   article {
     clear: both;
-    h2 {
-      border-bottom: 1px solid #ddd;
+    header>p, header>h1 {
+      text-align: left;
     }
     header>p {
       margin: 0 0 1.5em 0;

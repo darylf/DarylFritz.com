@@ -2,16 +2,16 @@
 layout: default
 title: A Toronto based web developer
 ---
-<aside role='complementary' class='about-me'>
+<aside role='complementary' class='about-me' itemscope itemtype='http://schema.org/Person'>
   <h2>About Me</h2>
 
-  <div class="circular"><img src="{{ site.picture }}" title="Daryl Fritz" height="200" width="200" /></div>
+  <div class="circular"><img src="{{ site.picture }}" title="Daryl Fritz" alt="profile picture of Daryl Fritz" height="200" width="200" itemprop='image'></div>
 
   <p itemprop='description'>
-    <strong>I am <span itemprop='homeLocation workLocation'>Toronto</span> based web developer who enjoys travel, beer, and technology.</strong>
-    I specialize in ASP.NET, W3C compliant HTML5/CSS3 &amp; JavaScript/jQuery programming. I also have part time experience in Ruby on Rails and iOS development.
+    <strong><a rel='me' href='http://darylfritz.com' itemprop='url'><span itemprop='name'><span itemprop='givenName'>Daryl</span> <span itemprope='familyName'>Fritz</span></span></a> is a <span itemprop='homeLocation workLocation'>Toronto</span> based <span itemprop='jobTitle'>web developer</span> who enjoys travel, beer, and technology.</strong>
+    He specializes in ASP.NET, W3C compliant HTML5/CSS3 &amp; JavaScript/jQuery programming. He also has part time experience in Ruby on Rails and iOS development.
   </p>
-  <p>I can be found on these social networks:</p>
+  <p>He can be found on these social networks:</p>
   <ul>
     <li><a rel='me' href='https://ca.linkedin.com/in/darylfritz' title="LinkedIn: A professional network of the connections I've made throughout my career.">LinkedIn</a></li>
     <li><a rel='me' href='https://twitter.com/DarylFritz' title="Twitter: My ongoing thoughts about programming, music, and life in general.">Twitter</a></li>
@@ -24,7 +24,7 @@ title: A Toronto based web developer
 
 {% if site.posts.size > 0 %}
 <hr>
-<main role='main'>
+<nav id="recent-posts" role='navigation'>
   <h2 class='section-title'>Recent Posts</h2>
 
   <ul id="recent">
@@ -33,6 +33,6 @@ title: A Toronto based web developer
     {% endfor %}
   </ul>
 
-</main>
+</nav>
 {% endif %}
 <hr>
