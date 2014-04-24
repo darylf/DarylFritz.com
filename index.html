@@ -1,38 +1,28 @@
----
-layout: default
-title: A Toronto based web developer
----
-<aside role='complementary' class='about-me' itemscope itemtype='http://schema.org/Person'>
-  <h2>About Me</h2>
+<!doctype html>
+<meta charset='utf-8'>
+<link rel='stylesheet' href='minimal.css'>
+<title>Daryl Fritz &#8729; A Toronto based web developer</title>
+<body itemtype="http://schema.org/Person" itemscope>
 
-  <div class="circular"><img src="{{ site.picture }}" title="Daryl Fritz" alt="profile picture of Daryl Fritz" height="200" width="200" itemprop='image'></div>
+<h1 itemprop=name><a itemprop='url' rel=me href='http://darylfritz.com'>Daryl Fritz</a></h1>
+<meta itemprop=homeLocation content='Toronto, Canada'>
+<meta itemprop=jobTitle content='Web Developer'>
 
-  <p itemprop='description'>
-    <strong><a rel='me' href='http://darylfritz.com' itemprop='url'><span itemprop='name'><span itemprop='givenName'>Daryl</span> <span itemprope='familyName'>Fritz</span></span></a> is a <span itemprop='homeLocation workLocation'>Toronto</span> based <span itemprop='jobTitle'>web developer</span> who enjoys travel, beer, and technology.</strong>
-    He specializes in ASP.NET, W3C compliant HTML5/CSS3 &amp; JavaScript/jQuery programming. He also has part time experience in Ruby on Rails and iOS development.
-  </p>
-  <p>He can be found on these social networks:</p>
-  <ul>
-    <li><a rel='me' href='https://ca.linkedin.com/in/darylfritz' title="LinkedIn: A professional network of the connections I've made throughout my career.">LinkedIn</a></li>
-    <li><a rel='me' href='https://twitter.com/DarylFritz' title="Twitter: My ongoing thoughts about programming, music, and life in general.">Twitter</a></li>
-    <li><a rel='me' href='https://google.com/+DarylFritz' title="Google+: My collection of links and stories, generally related to music and technology.">Google+</a></li>
-    <li><a rel='me' href='https://github.com/DarylF' title="GitHub: A place for me to post code and collaborate on various development projects.">GitHub</a></li>
-    <li><a rel='me' href='https://www.flickr.com/photos/darylfritz' title="Flickr: A repository of the photography I've taken all over the world.">Flickr</a></li>
-    <li><a rel='me' href='https://www.last.fm/user/MadCowDzz' title="Last.fm: A history of my musical tastes.">Last.fm</a></li>
-  </ul>
-</aside>
+<p itemprop='description'>I specialize in ASP.NET, W3C compliant HTML5/CSS3 &amp;
+JavaScript/jQuery programming as well as part time experience
+in Ruby on Rails and iOS development.
 
-{% if site.posts.size > 0 %}
-<hr>
-<nav id="recent-posts" role='navigation'>
-  <h2 class='section-title'>Recent Posts</h2>
+<p>I can be found on these social networks:
 
-  <ul id="recent">
-    {% for post in site.posts limit: 5  %}
-    <li><a href='{{post.url}}'>{{ post.title }}</a> <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></li>
-    {% endfor %}
-  </ul>
+<ul>
+  <li><a rel=me href='https://ca.linkedin.com/in/darylfritz'>LinkedIn</a>
+  <li><a rel=me href='https://twitter.com/DarylFritz'>Twitter</a>
+  <li><a rel=me href='https://google.com/+DarylFritz'>Google+</a>
+  <li><a rel=me href='https://github.com/DarylF'>GitHub</a>
+  <li><a rel=me href='https://www.flickr.com/photos/darylfritz'>Flickr</a>
+  <li><a rel=me href='https://www.last.fm/user/MadCowDzz'>Last.fm</a>
+</ul>
 
-</nav>
-{% endif %}
-<hr>
+<script src=g_analytics.js></script>
+
+<!-- Despite its minimalistic style, this page validates as HTML5 -->

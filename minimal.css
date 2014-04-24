@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  margin: 3em 5em;
+}
+
+h1 > a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-left: 3em;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.3em;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li:before {
+  content: "\00BB";
+  padding-right: 5px;
+}
+
+li > a {
+  color: #00f;
+}
+
+li > a:hover {
+  color: #f00;
+}
+
+@media screen and (min-width:800px) {
+body {
+  font-family: sans-serif;
+  margin: 5em 23em;
+}
+}
