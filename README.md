@@ -1,4 +1,4 @@
-My GitHub Home
+DarylFritz.com
 ==============
 
 Textdrive decided to close business, taking my Life Time Web Hosting with them! I guess it's time to use GitHub's pages for my hosting instead.
