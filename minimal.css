@@ -1,11 +1,18 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   margin: 3em 5em;
+  color: #333;
 }
 
 h1 > a {
-  color: #000;
+  color: #333;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+p {
+  font-size:15px;
 }
 
 ul {
@@ -18,24 +25,27 @@ li {
   margin-bottom: 0.3em;
   padding-left: 1em;
   text-indent: -1em;
+  color: #444;
+  font-size: 14px;
 }
 
 li:before {
   content: "\00BB";
+  color: #aaa;
   padding-right: 5px;
 }
 
 li > a {
-  color: #00f;
+  color: #6B8E23;
 }
 
-li > a:hover {
+li > a:hover,
+li > a:active {
   color: #f00;
 }
 
 @media screen and (min-width:800px) {
-body {
-  font-family: sans-serif;
-  margin: 5em 23em;
-}
+  body {
+    margin: 5em 23em;
+  }
 }
