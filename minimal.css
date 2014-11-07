@@ -1,18 +1,31 @@
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
-  margin: 3em 5em;
   color: #333;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 3em 5em;
+}
+
+h1 {
+  text-align: center;
 }
 
 h1 > a {
-  color: #333;
+  color: #000;
+  font: italic 700 48px "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  letter-spacing: -3px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 36px;
+}
+
+h1 span:first-child {
+  color: #c8102e;
+}
+
+h1 span {
+  border-bottom: 2px solid #555;
 }
 
 p {
-  font-size:15px;
+  font-size:16px;
 }
 
 ul {
@@ -22,30 +35,31 @@ ul {
 }
 
 li {
+  color: #444;
+  font-size: 15px;
   margin-bottom: 0.3em;
   padding-left: 1em;
   text-indent: -1em;
-  color: #444;
-  font-size: 14px;
 }
 
 li:before {
-  content: "\00BB";
   color: #aaa;
+  content: "\00BB";
   padding-right: 5px;
 }
 
 li > a {
-  color: #6B8E23;
+  color: #4A773C;
 }
 
 li > a:hover,
 li > a:active {
-  color: #f00;
+  color: #6CC24A;
 }
+
 
 @media screen and (min-width:800px) {
   body {
-    margin: 5em 23em;
+    margin: 5em 26.5em;
   }
 }
