@@ -4,7 +4,7 @@ Title    : DarylFritz.com CSS
 Author   : Daryl Fritz
 URL      : http://darylfritz.com
 
-Updated  : January 1, 2015
+Updated  : April 16, 2015
 
 - - - - - - - - - - - - - - - - - - - - -  */
 body, #page, header h1, ul, ul li {
@@ -45,15 +45,14 @@ ul {
   padding-right: 1em; }
 
 ul li {
-  border-left: 1px solid #ccc;
   display: inline;
   font-size: 1em;
   list-style: none;
   padding: 0 .5em;
   text-transform: lowercase; }
 
-ul li:first-child {
-  border: 0; }
+li + li {
+  border-left: 1px solid #ccc; }
 
 a {
   color: #c8102e; }
