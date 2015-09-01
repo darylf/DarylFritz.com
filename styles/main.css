@@ -4,31 +4,30 @@ Title    : DarylFritz.com CSS
 Author   : Daryl Fritz
 URL      : http://darylfritz.com
 
-Updated  : April 16, 2015
+Updated  : August 31, 2015
 
 - - - - - - - - - - - - - - - - - - - - -  */
-body, #page, header h1, ul, ul li {
-  margin: 0;
-  padding: 0; }
 
 body {
   background: white url(../images/spacecow_08.jpg) no-repeat fixed -125px -100px;
   color: #000;
-  font: 100% Verdana, Geneva, sans-serif; }
+  font: 100% Verdana, Geneva, sans-serif; 
+  margin: 0;
+  padding: 0; }
 
-#page {
+body>div {
   bottom: 40px;
   margin-bottom: 10px;
   position: absolute;
   right: 40px;
+  text-align: right;
   width: 472px; }
-
-#page, h1, ul {
-  text-align: right; }
 
 h1 {
   font: italic 700 3em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 0.3em; }
+  letter-spacing: 0.3em; 
+  margin: 0;
+  padding: 0; }
 
 h1 span:first-child {
   color: #c8102e; }
@@ -41,8 +40,8 @@ h2 {
   display: none; }
 
 ul {
-  margin-top: 1.8em;
-  padding-right: 1em; }
+  margin: 1.8em 0 0 0;
+  padding: 0 1em 0 0; }
 
 ul li {
   display: inline;
@@ -65,13 +64,11 @@ a:hover, a:active {
     background-image: none;
     font-size:90%;}
 
-  #page {
+  body>div {
     margin: 0 4.5%;
     position: static;
+    text-align: center;
     width: auto; }
-
-  #page, h1, ul {
-    text-align: center; }
 
   h1 {
     font-size: 2.5em; 
