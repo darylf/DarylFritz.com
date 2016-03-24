@@ -1,13 +1,3 @@
-/* - - - - - - - - - - - - - - - - - - - - -
-
-Title    : DarylFritz.com CSS
-Author   : Daryl Fritz
-URL      : http://darylfritz.com
-
-Updated  : August 31, 2015
-
-- - - - - - - - - - - - - - - - - - - - -  */
-
 body {
   background: white url(../images/spacecow_08.jpg) no-repeat fixed -125px -100px;
   color: #000;
@@ -15,13 +5,14 @@ body {
   margin: 0;
   padding: 0; }
 
-body>div {
+body > div {
   bottom: 40px;
+  margin-top: 50px;
   margin-bottom: 10px;
   position: absolute;
   right: 40px;
   text-align: right;
-  width: 472px; }
+  width: 540px; }
 
 h1 {
   font: italic 700 3em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -37,7 +28,12 @@ h1 a {
   text-decoration: none; }
 
 h2 {
-  display: none; }
+  font-size: 110%; }
+
+h2 > span {
+  color: #c8102e;
+  font-size: 150%;
+  margin: auto 0.5em; }
 
 ul {
   margin: 1.8em 0 0 0;
@@ -59,7 +55,7 @@ a {
 a:hover, a:active {
   color: #333; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   body {
     background-image: none;
     font-size:90%;}
