@@ -1,15 +1,15 @@
 body {
   background: white url(../images/spacecow_08.jpg) no-repeat fixed -125px -100px;
   color: #333;
-  font: 100% Verdana, Geneva, sans-serif; 
+  font-family: Verdana, Geneva, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 body > div {
   bottom: 40px;
-  margin-top: 50px;
   margin-bottom: 10px;
+  margin-top: 50px;
   position: absolute;
   right: 40px;
   text-align: right;
@@ -18,7 +18,7 @@ body > div {
 
 h1 {
   font: italic 700 3em "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 0.3em; 
+  letter-spacing: 0.3em;
   margin: 0;
   padding: 0;
 }
@@ -28,7 +28,7 @@ h1 span:first-child {
 }
 
 h1 a {
-  color: inherit; 
+  color: inherit;
   text-decoration: none;
 }
 
@@ -43,15 +43,15 @@ h2 > span {
 }
 
 ul {
-  margin: 1.8em 0 0 0;
-  padding: 0 1em 0 0; 
+  margin: 1.8em 0 0;
+  padding: 0 1em 0 0;
 }
 
 ul li {
   display: inline;
   font-size: 1em;
   list-style: none;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   text-transform: lowercase;
 }
 
@@ -63,17 +63,18 @@ a {
   color: #d00022;
 }
 
-a:hover, a:active {
+a:active,
+a:hover {
   color: inherit;
 }
 
 @media only screen and (max-width: 640px) {
   body {
     background-image: none;
-    font-size:90%;
+    font-size: 90%;
   }
 
-  body>div {
+  body > div {
     margin: 0 4.5%;
     position: static;
     text-align: center;
@@ -81,7 +82,7 @@ a:hover, a:active {
   }
 
   h1 {
-    font-size: 2.5em; 
+    font-size: 2.5em;
     letter-spacing: 0.1em;
   }
 
