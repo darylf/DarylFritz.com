@@ -92,7 +92,7 @@ a:hover {
     font-size: 90%;
   }
 
-  body > div {
+  body > main {
     margin: 0 4.5%;
     position: static;
     text-align: center;
