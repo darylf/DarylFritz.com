@@ -24,7 +24,7 @@ body {
   padding: 0;
 }
 
-body > div {
+body > main {
   bottom: 40px;
   margin-bottom: 10px;
   margin-top: 50px;
