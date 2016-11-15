@@ -1,3 +1,21 @@
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'),local('Lato-Light'),url(https://fonts.gstatic.com/l/font?kit=AgYOQ731ufUQTvv4tet3mk3wbcQFzxrT6-PKOgL6iDg&skey=91f32e07d083dd3a&v=v11) format('woff2')
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'),local('Lato-Regular'),url(https://fonts.gstatic.com/l/font?kit=IMEywLDYyR29_ihMBrnur1fGIGuiYE6vg31UE1nibtMOGcCWZBUL91xMw_hyo9o9&skey=2d58b92a99e1c086&v=v11) format('woff2')
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'),local('Lato-Black'),url('data:application/x-font-woff;charset=utf-8;base64,d09GMgABAAAAAASoAA0AAAAABzAAAARYAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG4EIHAwGYABUEQgKhVCEdwsSAAE2AiQDIAQgBYJkByAb5AUAxADczIugofBSV0vrwCB9UdicvIsgE/dMnap5wAhMsSiOtTupNieGPGC1NShXKge0QlSba51smp+GiKK0Rb/WNyAAyBGNfJD5heX1UI71cGq4gsYpfB20118nQI6yOjWUkvADASanNMgEpOokm0EKrvBGbFEoSwciiSCUgwZxjBKSIRK6IRZeR04InC8MfwRQdDz1MkSAaIbIHh7hLD+izuEa8auUIlVykiTp4wq1BThcje4ysD5uZnU5svHyH1Jc+v8sYonkFLHPG1g+3qbtREehenvLtIBS7T1kSKFtK0EBKUjQiEQ9WIyAE4QqaCDdGeG5cEjYJKwTll97jLmTVICKVKkEJskyQN/7RPHMAm3RBQlS/lXCXhogs7d3zvZvMh6/fJ/h7148CsORC3fkpnuXjs0mFVKFTEHN5i0WCwwb1uyQKy0Whrfdv8/wIQ1XzGaz3GS1WgmjzWZrMJnr7YzWa9bZUsPgq8Sm9fsZ/vT+7YRs0GB+olaeza/5uY3hLU8tjIzhd+5d69JgszF8Rv2aPXLTKbmpnp69ZofcdO7ePbnpAQwXLSyAYb8PQpvWn2f4s3ctDH97/3rCeMkK1g2F8dUN6XHrryKSm84RRFPTZoYhGchpw0WG3717NcPvdGh4YE7b4H/wu78DA/7+76C//6H//goI/Ou7QyjZeVSxbmftznUK+OV7DO7LmjUz/4jWr+2vvQ6NSuN8jk2scHkc4h4Q2qL+XZ3PBXLKhPFLhYv42semocKzL/MXauZYWvr6VZ0vBUwp2FXgA7eX7VQl/ob6blPSYGC2NFi2zV7v7//OwW3Bqha3AI/s6Hz3oMAcd2/37IBA9xyfHLfAoHy3GI8czLA74/RF9v64Sd3JTQvZ+qKtQZ/Ea+0nv+k3q8A4B1F+occOOzgeC/g5JO3bYI9X8twbXFq8GkLzMoNbsiqSjOqObXEjCcNTe33qIt8ueuF6oofbbrdcpzh/z7c+mOy1Os+90bnFqzE8Lz+kryg3dhrbsjZ+MHloaptfWfQDfKIq1YaWVwZpCpybnT09Z+7wSv/3cvK2qH/N/1L+kT6TB6Sfy5WKhR3LLqwMBwCAaF+4bjmxwNmxS5X+m9RF8uRZ695b3qmVT3wQOU9o/X+9zFOiU2VBwAZwS3Lq/0YcJKsWWoVQmeeDXQcgpfsQTLyJdPoQ7OlsxJOJwjUqFTMoLRwpb/haDUvxIiToDHCazIgVVFKXSNAaam1aBqLo6GcklCFIA6FQDd8iPQ8RoRo6RAx7XKuiRDysKEcPOGjgjVyM4VwfRlELFoOY0K3qwGEmqqHJg2r0oxwT9K4HesxCPmZhGCz65fI+pMJ7VWbseSyiEYMYNIKFDnoMk6wGHIPId9GIRxq80QQWenDI1Qjb/fgw9BiCNzTQgk2yPs9OQIc+sHuSI54PgQMHLVIRhSjo0VcoyFpK9YjcvzeGSGiwOogoVKEQ5a8zupYJa3ENDA==') format('woff2')
+}
 body {
   background: white url(../images/spacecow_08.jpg) no-repeat fixed -125px -100px;
   color: #333;
