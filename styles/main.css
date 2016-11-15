@@ -90,6 +90,7 @@ a:hover {
   body {
     background-image: none;
     font-size: 90%;
+    margin-top: 2em;
   }
 
   body > main {
