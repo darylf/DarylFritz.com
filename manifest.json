@@ -1,0 +1,17 @@
+{
+  "manifest_version": 1,
+  "version": "1",
+  "name": "Daryl Fritz - A Toronto based web developer",
+  "short_name": "Daryl Fritz",
+  "description": "The homepage of Daryl Fritz, a full stack developer from Toronto, Canada, who has a passion for JavaScript, HTML5, CSS3, ASP.NET and Ruby on Rails.",
+
+  "default_locale": "en",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "32x32"
+    }
+  ]
+}
