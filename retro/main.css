@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@media only screen {
+  body {
+    margin-top: 3vh;
+    background-color: #2c2c2c;
+    color: white;
+    font-family: "Press Start 2P", sans-serif;
+    text-align: center;
+  }
+
+  .header__title {
+    font-size: 10vw;
+    color: #e40058;
+    background: -webkit-linear-gradient(180deg, #fcfc68 0%, #f8b800 25%, #e40058 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    animation: spin 2s linear;
+  }
+  .header__subtitle {
+    font-size: 4vw;
+    color: #d8d8d8;
+  }
+  .header__subtitle > * {
+    display: block;
+    color: #e40058;
+  }
+
+  .menu {
+    font-size: 2vw;
+    margin: 4em 20% 0;
+    padding: 0 1em 0 0;
+  }
+  .menu__item {
+    list-style: none;
+    padding: 0.4em;
+    text-transform: lowercase;
+    display: grid;
+    grid-template-columns: 2em auto 2em;
+    grid-column-gap: 10px;
+  }
+  .menu__item a {
+    font-size: 3.5vw;
+    text-decoration: none;
+    color: white;
+  }
+  .menu__item:hover a {
+    color: #0078f8;
+    animation: link_over 0.5s;
+  }
+
+  .menu__item::before,
+.menu__item::after {
+    color: #f8b800;
+    content: "";
+  }
+
+  .menu__item:hover::after {
+    content: "◄";
+    animation: vflip 2s linear infinite;
+  }
+
+  .menu__item:hover::before {
+    content: "►";
+    animation: vflip 2s linear infinite;
+  }
+
+  .about-me {
+    color: #f8b8f8;
+    font-size: 2.5vw;
+    line-height: 2em;
+    margin-top: 3em;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  @keyframes vflip {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateX(-360deg);
+    }
+  }
+  @keyframes link_over {
+    from {
+      color: white;
+    }
+    to {
+      color: #0078f8;
+    }
+  }
+}
+@media only screen and (min-width: 730px) {
+  .header__title {
+    font-size: 8vw;
+  }
+  .header__subtitle {
+    font-size: 2.7vw;
+  }
+
+  .menu {
+    font-size: 1vw;
+    margin: 3em 20% 0;
+    padding: 0 1em 0 0;
+  }
+  .menu__item a {
+    font-size: 2.5vw;
+    padding: 0.2em 0;
+  }
+
+  .about-me {
+    font-size: 1.5vw;
+    line-height: 1.5em;
+    margin-top: 2em;
+  }
+}
+@media only print {
+  body {
+    color: #000;
+    background-color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  a::after {
+    content: " (" attr(href) ")";
+  }
+}
