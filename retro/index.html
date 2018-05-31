@@ -1,39 +1,77 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1">
-  <title>Daryl Fritz</title>
-  <link href="main.css" rel="stylesheet">
+
+  <title>Daryl Fritz &#8729; A Toronto based software developer</title>
+
+  <!-- Generic Meta Properties -->
+  <meta name="author" content="Daryl Fritz">
+  <meta name="description" content="Daryl Fritz is a full stack web developer with a passion
+    for JavaScript, HTML5, CSS3, ASP.NET and Ruby on Rails development from Toronto, Canada.">
+
+  <link href="css/basic.css" rel="stylesheet" media="screen">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <meta property="og:title" content="Daryl Fritz">
+  <meta property="og:description" content="Daryl Fritz is a full stack web developer with a passion
+  for JavaScript, HTML5, CSS3, ASP.NET and Ruby on Rails development from Toronto, Canada.">
+  <meta name="twitter:title" content="Daryl Fritz">
 </head>
 
 <body>
-  <header class="header">
-    <h1 class="header__title">Daryl Fritz</h1>
-    <h2 class="header__subtitle">
-      Software Developer
-      <span>&#9733;</span>
-      World Traveller</h2>
-  </header>
+  <main itemtype="http://schema.org/Person" itemscope>
+    <header class="header">
+      <h1 itemprop="name" class="header__title">
+        <a itemprop="url" rel="me" href="https://darylfritz.com">
+          <span itemprop="givenName">Daryl</span>
+          <span itemprop="familyName">Fritz</span>
+        </a>
+      </h1>
+      <h2 class="header__subtitle">
+        Software Developer
+        <span>&#9733;</span>
+        World Traveller</h2>
+    </header>
 
-  <ul class="menu">
-    <li class="menu__item">
-      <a rel="me" href="https://ca.linkedin.com/in/darylfritz">LinkedIn</a>
-    </li>
-    <li class="menu__item">
-      <a rel="me" href="https://twitter.com/DarylFritz">Twitter</a>
-    </li>
-    <li class="menu__item">
-      <a rel="me" href="https://github.com/DarylF">GitHub</a>
-    </li>
-    <li class="menu__item">
-      <a rel="me" href="https://www.last.fm/user/MadCowDzz">Last.fm</a>
-    </li>
-  </ul>
+    <ul class="menu">
+      <li class="menu__item">
+        <a rel="me" href="https://ca.linkedin.com/in/darylfritz">LinkedIn</a>
+      </li>
+      <li class="menu__item">
+        <a rel="me" href="https://twitter.com/DarylFritz">Twitter</a>
+      </li>
+      <li class="menu__item">
+        <a rel="me" href="https://github.com/DarylF">GitHub</a>
+      </li>
+      <li class="menu__item">
+        <a rel="me" href="https://www.last.fm/user/MadCowDzz">Last.fm</a>
+      </li>
+    </ul>
 
-  <main class="about-me">
-    Daryl is a full stack web developer with a passion for JavaScript, HTML5, CSS3, ASP.NET and Ruby on Rails development.
+    <p class="about-me" itemprop="description">
+      Daryl is a full stack web developer with a passion for JavaScript, HTML5, CSS3, ASP.NET and Ruby on Rails development.
+    </p>
+
+    <meta itemprop="jobTitle" content="Software Developer">
+    <span itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <meta itemprop="addressLocality" content="Toronto">
+        <meta itemprop="addressCountry" content="Canada">
+      </span>
+    </span>
   </main>
+
+  <link href="css/fancy.css" rel="stylesheet" media="screen">
+  <link href="css/print.css" rel="stylesheet" media="print">
+  <script>
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments)
+    }, ga.l = +new Date, ga("create", "UA-371632-3", "auto"), ga("send", "pageview");
+  </script>
+  <script async src=//www.google-analytics.com/analytics.js></script>
 </body>
 
 </html>

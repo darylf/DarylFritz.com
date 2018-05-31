@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Press Start 2P Regular"), local("PressStart2P-Regular"), url("../fonts/press-start-2p-v6-latin-regular.woff2") format("woff2"), url("../fonts/press-start-2p-v6-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes vflip {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(-360deg);
+  }
+}
+
+@keyframes link_over {
+  from {
+    color: white;
+  }
+  to {
+    color: #0078f8;
+  }
+}
+
+.header__title {
+  background: -webkit-linear-gradient(180deg, #fcfc68 0%, #f8b800 25%, #e40058 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: spin 2s linear;
+}
+
+.menu__item:hover a {
+  animation: link_over 0.5s;
+}
+
+.menu__item:hover::before {
+  content: "►";
+  animation: vflip 2s linear infinite;
+}
+
+.menu__item:hover::after {
+  content: "◄";
+  animation: vflip 2s linear infinite;
+}
