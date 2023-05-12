@@ -1,228 +1,64 @@
-@media only screen and (min-width: 641px) {
-  body {
-    background: white url(/assets/images/spacecow_08.jpg) no-repeat fixed -125px -100px;
-    color: #333;
-    font-family: Verdana, Geneva, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+html { font-size: 140%; } 
 
-  body > main {
-    bottom: 40px;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    position: absolute;
-    right: 40px;
-    text-align: right;
-    width: 540px;
-  }
-
-  h1 {
-    font: italic 700 3em Helvetica, Arial, sans-serif;
-    letter-spacing: 0.3em;
-    margin: 0;
-    padding: 0;
-  }
-
-  h1 span:first-child {
-    color: #d00022;
-  }
-
-  h1 a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  h2 {
-    font-size: 110%;
-  }
-
-  h2 > span {
-    color: #d00022;
-    font-size: 150%;
-    margin: auto 0.5em;
-  }
-
-  ul {
-    margin: 1.8em 0 0;
-    padding: 0 1em 0 0;
-  }
-
-  li {
-    display: inline;
-    font-size: 1em;
-    list-style: none;
-    padding: 0 0.5em;
-    text-transform: lowercase;
-  }
-
-  li + li {
-    border-left: 1px solid #ccc;
-  }
-
-  p {
-    max-width: 100em;
-  }
-
-  a {
-    color: #d00022;
-  }
-
-  a:active,
-  a:hover {
-    color: inherit;
-  }
-}
-@media only screen and (max-width: 640px) {
-  html,
-  body {
-    background-color: #2c2c2c;
-    color: #ffffff;
-  }
-
-  body {
-    color: white;
-    font-family: "Press Start 2P", sans-serif;
-    margin-top: 3vh;
-    text-align: center;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  h1 {
-    color: #e40058;
-    font-size: 10vw;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    color: #d8d8d8;
-    font-size: 4vw;
-  }
-
-  h2 > * {
-    color: #e40058;
-    display: block;
-  }
-
-  .menu {
-    font-size: 2vw;
-    text-align: left;
-    margin: 4em 20% 0;
-    padding: 0 1em 0 0;
-  }
-
-  .menu > li {
-    display: grid;
-    grid-template-columns: 2em auto 2em;
-    grid-column-gap: 10px;
-    list-style: none;
-    padding: 0.4em;
-    text-transform: lowercase;
-  }
-
-  .menu > li::before,
-  .menu > li::after {
-    color: #f8b800;
-    content: "";
-  }
-
-  .menu > li:hover > a {
-    color: #0078f8;
-  }
-
-  .menu > li > a {
-    color: #ffffff;
-    font-size: 3.5vw;
-    padding: 0.5em 0;
-    margin: 0.2em 0;
-  }
-  .menu > li a::before {
-    content: ">  ";
-  }
-
-  .about-me {
-    color: #f8b8f8;
-    font-size: 2.5vw;
-    line-height: 2em;
-    margin-top: 3em;
-  }
-  @font-face {
-    font-family: "Press Start 2P";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Press Start 2P Regular"), local("PressStart2P-Regular"),
-      url("../fonts/press-start-2p-v6-latin-regular.woff2") format("woff2"),
-      url("../fonts/press-start-2p-v6-latin-regular.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    font-display: swap;
-  }
-
-  @keyframes spin {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(-360deg);
-    }
-  }
-
-  @keyframes vflip {
-    from {
-      transform: rotateX(0deg);
-    }
-    to {
-      transform: rotateX(-360deg);
-    }
-  }
-
-  @keyframes link_over {
-    from {
-      color: white;
-    }
-    to {
-      color: #0078f8;
-    }
-  }
-
-  h1 {
-    background: -webkit-linear-gradient(
-      180deg,
-      #fcfc68 0%,
-      #f8b800 25%,
-      #e40058 100%
-    );
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: spin 2s linear;
-  }
-
-  .menu > li:hover a {
-    animation: link_over 0.5s;
-  }
-
-  .menu > li:hover a::before {
-    content: ">> ";
-    animation: vflip 2s linear infinite;
-  }
+body {
+  background: white url(/assets/images/spacecow_08.jpg) no-repeat fixed -125px -100px;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding: 0 2rem;
+  font-family: 'Merriweather Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
-@media only print {
-  body {
-    color: #000;
-    background-color: #fff;
-  }
+main {
+  max-width: 60rem;
+  margin: auto;
+}
 
-  a {
-    text-decoration: none;
-    color: #000;
-  }
+header {
+  margin-bottom: 2rem;
+}
 
-  a::after {
-    content: " (" attr(href) ")";
-  }
+h1, h2 {
+  margin: 0.4rem auto 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  color: #333;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 2rem;
+  height: 2rem;
+}
+
+.brand {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.twitter {
+  border-color: #1da1f2;
+}
+.linkedin {
+  border-color: #0A66C2;
+}
+.github {
+  border-color: #28a745;
+}
+.lastfm {
+  border-color: #D51007;
 }

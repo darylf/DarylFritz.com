@@ -3,60 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Daryl Fritz &#8729; A Toronto based web developer</title>
   <meta name="viewport" content="initial-scale=1, maximum-scale=4">
-  <meta name="description" content="Daryl Fritz is a senior software developer with a passion for
-    Java, Ruby, Kotlin, JavaScript, TypeScript, and React development from Toronto, Canada.">
-  <link rel="manifest" href="/assets/manifest.json">
+  <title>Daryl Fritz &#8729; A Toronto based web developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://darylfritz.com">
 </head>
 
 <body>
-  <main itemtype="http://schema.org/Person" itemscope>
+  <main>
     <header>
-      <h1 itemprop="name"><a itemprop="url" rel=me href="http://darylfritz.com">
-          <span itemprop="givenName">Daryl</span>
-          <span itemprop="familyName">Fritz</span></a>
-      </h1>
-      <h2>Software Developer <span>&#9733;</span> World Traveller</h2>
+      <h1>Daryl Fritz</h1>
+      <h2>Full Stack Developer</h2>
     </header>
 
-    <p class="about-me" itemprop="description">A software developer with a passion for Java, Ruby, Kotlin, JavaScript,
-      TypeScript, and React development.</p>
-
-    <ul class="menu">
-      <li><a rel="me" href="https://ca.linkedin.com/in/darylfritz">LinkedIn</a>
-      <li><a rel="me" href="https://twitter.com/DarylFritz">Twitter</a>
-      <li><a rel="me" href="https://github.com/DarylF">GitHub</a>
-      <li><a rel="me" href="https://www.last.fm/user/MadCowDzz">Last.fm</a>
+    <ul>
+      <li><a rel="me" href="https://ca.linkedin.com/in/darylfritz" title="LinkedIn">
+        <img src="/assets/images/linkedin.svg" alt="LinkedIn logo" class="brand linkedin">
+      </a>
+      <li><a rel="me" href="https://twitter.com/DarylFritz" title="Twitter">
+        <img src="/assets/images/twitter.svg" alt="Twitter logo" class="brand twitter">
+      </a></li>
+      <li><a rel="me" href="https://github.com/DarylF" title="GitHub">
+        <img src="/assets/images/github.svg" alt="Github logo" class="brand github">
+      </a></li>
+      <li><a rel="me" href="https://www.last.fm/user/MadCowDzz" title="Last.fm">
+        <img src="/assets/images/lastfm.svg" alt="Last.fm logo" class="brand lastfm">
+      </a></li>
     </ul>
-
-    <meta itemprop="jobTitle" content="Software Developer">
-    <span itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <meta itemprop="addressLocality" content="Toronto">
-        <meta itemprop="addressCountry" content="Canada">
-      </span>
-    </span>
   </main>
 
-  <noscript id="deferred-styles">
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-  </noscript>
-  <script>
-    var loadDeferredStyles = function () {
-      var addStylesNode = document.getElementById("deferred-styles");
-      var replacement = document.createElement("div");
-      replacement.innerHTML = addStylesNode.textContent;
-      document.body.appendChild(replacement)
-      addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-      webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
-    else window.addEventListener('load', loadDeferredStyles);
-    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }, ga.l = +new Date, ga("create", "UA-371632-3", "auto"), ga("send", "pageview");
-  </script>
   <script async src=//www.google-analytics.com/analytics.js> </script>
 </body>
 </html>
