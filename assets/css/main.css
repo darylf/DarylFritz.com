@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-size: 150%;
+  font-size: 140%;
 }
 
 body {
@@ -82,5 +82,9 @@ li {
 @media (min-width: 500px) {
   main {
     margin: auto;
+  }
+
+  p {
+    font-size: 0.7rem;
   }
 }
