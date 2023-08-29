@@ -1,18 +1,24 @@
-html { font-size: 140%; } 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 150%;
+}
 
 body {
   background: white url(/assets/images/spacecow_08.jpg) no-repeat fixed -125px -100px;
-  display: flex;
-  min-height: 100vh;
   align-items: center;
   padding: 0 2rem;
   font-family: 'Merriweather Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   text-align: center;
+  color: #333;
 }
 
 main {
-  max-width: 60rem;
-  margin: auto;
+  margin: auto; /* Combine the margin rules */
+  margin-top: auto;
+  margin-bottom: 1rem;
+  max-width: 30rem;
 }
 
 header {
@@ -24,20 +30,23 @@ h1, h2 {
   font-size: 1.4rem;
   font-weight: 300;
   letter-spacing: -0.04em;
-  color: #333;
 }
 
 h1 {
   font-weight: 700;
 }
 
+p {
+  font-size: 0.8rem;
+}
+
 ul {
   display: flex;
-  gap: 1.2rem;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  gap: 1.2rem; /* Use gap instead of margin for spacing between li elements */
 }
 
 li {
@@ -48,6 +57,13 @@ li {
 .brand {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
+}
+
+/* Combine the similar styles for social media links */
+.twitter:hover, .linkedin:hover, .github:hover, .lastfm:hover {
+  /* border-style: solid; */
+  width: 2rem;
+  height: 2rem;
 }
 
 .twitter {
@@ -61,4 +77,10 @@ li {
 }
 .lastfm {
   border-color: #D51007;
+}
+
+@media (min-width: 500px) {
+  main {
+    margin: auto;
+  }
 }
