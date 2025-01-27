@@ -84,20 +84,8 @@ html, body.homepage {
   text-decoration: none;
 }
 
-@media (max-width: 850) {
-  .main-logo {
-    top: 0;
-    left: 0;
-    width: 50vh;
-    float: left;
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .main-logo {
     display: none;
-  }
-  main {
-    margin: auto;
-    padding: 5em;
   }
 }
