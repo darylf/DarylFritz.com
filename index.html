@@ -37,10 +37,24 @@
     <noscript>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Merriweather+Sans:wght@300;700&display=swap" rel="stylesheet">
     </noscript>
-
-    <link rel="preload" href="/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
-
+    <style type="text/css">
+      html, body.homepage {height: 100%;display: flex;flex-direction: column;font-size: 125%;}
+      body.homepage {background: #fff;font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;text-align: center;color: #333;font-size-adjust: 0.52;}
+      .main-logo {position: absolute;top: -125px;left: -100px;z-index: -100;pointer-events: none;user-select: none;}
+      .homepage main {margin: auto;max-width: 32rem;padding: 0 1rem;}
+      .homepage .heading {margin: 0.4rem auto 0;letter-spacing: -0.04em;}
+      .homepage h1.heading {font-size: 1.8rem;font-weight: 700;}
+      .homepage h2.heading {font-size: 1.3rem;font-weight: 300;margin-bottom: 0.6rem;}
+      .homepage p {font-family: "Roboto", sans-serif;font-weight: 300;font-style: normal;font-size: 0.95rem;line-height: 1.5;margin-top: 0.8rem;font-size-adjust: 0.50;}
+      .homepage .socials {display: flex;justify-content: center;list-style: none;padding: 0;margin: 1.2rem 0 0;gap: 1.2rem;}
+      .homepage .socials li {width: 1.5rem;height: 1.5rem;}
+      .social-link {display: block;height: 100%;width: 100%;color: #333 !important;}
+      .social-link:focus-visible {outline: 2px solid #333;outline-offset: 2px;border-radius: 4px;}
+      .homepage nav {font-size: 1rem;margin: 1rem 0;}
+      .homepage nav a {margin: 1rem;}
+      .homepage nav a:hover {text-decoration: none;}
+      @media (max-width: 700px) {.main-logo {display: none;}}
+    </style>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#ffffff">
