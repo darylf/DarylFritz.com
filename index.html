@@ -31,14 +31,17 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Merriweather+Sans:wght@300;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Merriweather+Sans:wght@300;700&display=swap"
+      as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Merriweather+Sans:wght@300;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Merriweather+Sans:wght@300;700&display=swap" rel="stylesheet">
     </noscript>
 
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preload" href="/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
+
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="preload" as="image" href="/assets/images/spacecow_08.jpg" imagesrcset="/assets/images/spacecow_08.jpg 1x">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="index,follow">
@@ -77,7 +80,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <main>
 
-      <img src="/assets/images/spacecow_08.jpg" class="main-logo" alt="Logo of Daryl Fritz, Full-Stack Developer" width="512" height="512" decoding="async" fetchpriority="high" loading="eager">
+      <img src="/assets/images/spacecow_08.jpg" class="main-logo" alt="" width="512" height="512" decoding="async" loading="lazy">
 
       <h1 class="heading">Daryl Fritz</h1>
       <h2 class="heading">Full-Stack Developer</h2>
