@@ -1,9 +1,0 @@
-body, a {
-  color: #000;
-  background-color: #fff;
-  text-decoration: none;
-}
-
-a::after {
-  content: " (" attr(href) ")";
-}

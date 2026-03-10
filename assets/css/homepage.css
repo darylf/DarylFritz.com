@@ -1,0 +1,164 @@
+html,
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  font-size: 125%;
+}
+
+body {
+  background: #fff;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #333;
+  font-size-adjust: 0.52;
+}
+
+.main-logo {
+  position: absolute;
+  top: -125px;
+  left: -100px;
+  z-index: -100;
+  pointer-events: none;
+  user-select: none;
+}
+
+main {
+  max-width: 30rem;
+  padding: 0 1rem;
+  margin: clamp(12svh, 50svh - 11.5rem, 34svh) auto 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.95rem;
+  line-height: 1.42;
+  margin-top: 0.65rem;
+  font-size-adjust: 0.5;
+}
+
+.tagline {
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+}
+
+.role {
+  color: #555;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.bio {
+  margin-top: 1rem;
+}
+
+nav {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.site-nav {
+  margin: 0.85rem 0 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li::after {
+  content: "â€¢";
+  margin-left: 0.9rem;
+  color: #bbb;
+}
+
+.nav-links li:last-child::after {
+  content: "";
+  margin-left: 0;
+}
+
+.nav-links a {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  color: #5f93e6;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  text-decoration: underline;
+}
+
+.nav-links a:focus-visible {
+  outline: 2px solid #7aa7e8;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1.1rem 0 0;
+  gap: 1.1rem;
+}
+
+.socials li {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.social-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333 !important;
+}
+
+.social-link:focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .main-logo {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin: clamp(9svh, 46svh - 8.5rem, 28svh) auto 0;
+  }
+}
+
