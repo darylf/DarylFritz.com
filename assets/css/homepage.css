@@ -17,6 +17,8 @@ body {
   position: absolute;
   top: -125px;
   left: -100px;
+  width: clamp(100px, 25vw, 400px);
+  height: auto;
   z-index: -100;
   pointer-events: none;
   user-select: none;
